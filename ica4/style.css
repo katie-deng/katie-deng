@@ -23,52 +23,61 @@ body {
     border-radius: 1.5em;
   }
   
-  /* Write a ruleset that targets both the card header, and card footer, giving them both a computed total height of 50px (including a content height of 30px and padding of 10px on all sides.) But express it in ems. */
+  /* Write a ruleset that targets both the card header, and card footer, giving them both a computed total height of 50px 
+  (including a content height of 30px and padding of 10px on all sides.) But express it in ems. */
 
   .card header {
     background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
     border-radius: 1.5em 1.5em 0 0;
-    height: 1.875em; /* 30px/16 = 1.875em */
-    padding: 0.625em; /* 10px/16 = 0.625em */
+    height: 3em; /* 30px/10 */
+    padding: 1em; /* 10px/1 */
   }
   
   .card footer {
     background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
     border-radius: 0 0 1.5em 1.5em;
-    height: 1.875em; /* 30px/16 = 1.875em */
-    padding: 0.625em; /* 10px/16 = 0.625em */
+    height: 3em; /* 30px/10 */
+    padding: 1em; /* 10px/10 */
   }
   
-/* Write a ruleset that gives the <p> inside the footer an effective font size of 15px (but expressed in ems) and an appropriate line height to place it in the center of the footer's content box. Recall from earlier that the content box height should be 30px — this gives you all the numbers you need to calculate the line height. */
+/* Write a ruleset that gives the <p> inside the footer an effective font size of 15px (but expressed in ems) and an appropriate
+ line height to place it in the center of the footer's content box. Recall from earlier that the content box height should be 
+ 30px — this gives you all the numbers you need to calculate the line height. */
   .card footer p {
-    font-size: 0.9365em; /* 15px/16 = 0.9365em*/
+    font-size: 1.5em; /* 15px/10 */
     line-height: center;
   }
 
   .card article img {
-    max-height: 7.5em; /* 120px/16 = 7.5em */
+    max-height: 12em; /* 120px/10 */
     float: right;
   }
 
-  /* The default margin applied to the <h2> and <p> elements by the browser will interfere with our design, so write a rule that targets all these elements and sets their margin to 0. */
+  /* The default margin applied to the <h2> and <p> elements by the browser will interfere with our design, so write a rule that 
+  targets all these elements and sets their margin to 0. */
   h2, p {
     margin: 0;
   }
 
-  /* Write a ruleset that gives the <h2> an effective font size of 20px (but expressed in ems) and an appropriate line height to place it in the center of the header's content box. Recall from earlier that the content box height should be 30px — this gives you all the numbers you need to calculate the line height. */
+  /* Write a ruleset that gives the <h2> an effective font size of 20px (but expressed in ems) and an appropriate line height 
+  to place it in the center of the header's content box. Recall from earlier that the content box height should be 30px — this 
+  gives you all the numbers you need to calculate the line height. */
   h2 {
-    font-size: 1.25em; /* 20px/16 = 1.25 em*/
+    font-size: 2em; /* 20px/10 */
     line-height: center;
   }
 
-  /* To stop the image from spilling out of the main business card content (the <article>element), we need to give it a specific height. Set the <article>'s height to 120px, but expressed in ems. Also give it a background color of semi-transparent black, resulting in a slightly darker shade that lets the background red color shine through a bit too. */
+  /* To stop the image from spilling out of the main business card content (the <article>element), we need to give it a specific
+   height. Set the <article>'s height to 120px, but expressed in ems. Also give it a background color of semi-transparent black, 
+   resulting in a slightly darker shade that lets the background red color shine through a bit too. */
   article {
-    height: 7.5em; /* 120px/16 = 7.5em */
+    height: 12em; /* 120px/10 */
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  /* As a last little touch, give the paragraph inside the <article> an appropriate padding value so that its left edge lines up with the <h2> and footer paragraph, and set its color to be fairly light so it is easy to read. */
+  /* As a last little touch, give the paragraph inside the <article> an appropriate padding value so that its left edge lines up 
+  with the <h2> and footer paragraph, and set its color to be fairly light so it is easy to read. */
   article p {
-    padding: 0.625em; /* 10px/16 = 0.625em*/
+    padding: 1em; /* 10px/10 */
     color: aliceblue;
   }
