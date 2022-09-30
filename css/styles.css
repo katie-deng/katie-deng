@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+}
+
+/* Header / Nav Bar content */
+h1 {
+    font-size: 50px;
+    font-family: 'Chango', cursive;
+    padding-left: 25px;
+    float: left;
+}
+
+.tabs {
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+    line-height: 5;
+    padding-right: 15px;
+    float: right;
+}
+
+.topnav a {
+    float: right;
+    height: 10%;
+    text-align: center;
+    padding: 16px;
+    font-size: 20px;
+}
+
+.topnav {
+    position: sticky;
+    top: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+hr {
+    width: 100%;
+    clear: both;
+    visibility: hidden;
+}
+
+/* Page content */
+h2 {
+    padding-left: 25px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 40px;
+
+}
+
+ol {
+    font-family: 'Libre Baskerville', serif;
+}
+
+p {
+    font-family: 'Libre Baskerville', serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+main div p {
+    padding-left: 25px;
+}
+
+.me {
+    height: auto; 
+    width: auto; 
+    max-width: 500px; 
+    max-height: 500px;
+    padding: 30px;
+}
+
+/* Media query: phone*/
+@media screen and (max-width: 600px){
+    body {
+        background-color: #fcf3d2;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+    }
+
+    main div {
+        padding-left: 20px;
+        padding-right: 25px;
+        text-align: center;
+    }
+
+    .me {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .topnav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-right: 10px;
+        background-color: #e3e1e1;
+    }
+
+    .tabs {
+        padding-left: 20px;
+    }
+
+  }
+
+/* Media query: desktop*/
+@media screen and (min-width: 601px){
+    body {
+        background-color: #d2e3fc;
+    }
+    
+    .topnav{
+        background-color: #f7dfdf;
+    }
+
+    main div .basics {
+        display: grid;
+        align-items: center;
+        padding-top: 100px;
+    }
+}

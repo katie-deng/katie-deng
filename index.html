@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Homepage - KD</title>
-        <link rel="stylesheet" href="./css files/styles.css">
+        <link rel="stylesheet" href="./css/styles.css">
         <!-- Font Links -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,41 +13,36 @@
     <body>
         <!-- Website Heading -->
         <div class="topnav">
-            <div style="float:left"><h1>
-                                        <span style=color:#FFBC0A>k</span>
-                                        <span style=color:#E88EED>a</span>
-                                        <span style=color:#0091AD>t</span>
-                                        <span style=color:#FF5E5B>i</span>
-                                        <span style=color:#58BC82>e</span>
-                                    </h1></div>
-            <div style="float:right" class="tabs">
-                    <a href="contact-pg.html">contact</a>
-                    <a href="about-pg.html">about</a>
-                    <a href="projects-pg.html">projects</a>
-                    <a href="index.html">home</a>
+            <div>
+                <h1>
+                    <span style=color:#FFBC0A>k</span>
+                    <span style=color:#E88EED>a</span>
+                    <span style=color:#0091AD>t</span>
+                    <span style=color:#FF5E5B>i</span>
+                    <span style=color:#58BC82>e</span>
+                </h1>
             </div>
+            <div class="tabs">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="projects-pg.html">projects</a></li>
+                    <li><a href="about-pg.html">about</a></li>
+                    <li><a href="contact-pg.html">contact</a></li>  
+                </ul>
+            </div>
+            <hr>
         </div>
 
-        <hr size=10px width=100% color="#D9D9D9">
-
-        <!-- Body content -->
-        <h2>hello!</h2>
-
-        <table cellspacing="10">
-            <tr>
-                <td>
-                    <p>welcome to my atls 2200 website ('22)! here you will find some works and projects done throughout this semester. these works allowed me to practice html and css. i hope to use these foundational skills to help me enter the field of ui/ux design :)</p>
-                    <p>check out this cool video about <a href="https://www.tiktok.com/t/ZTRPDok3n/">corn!</a></p>
-                </td>
-                <td><img src="./img/me.png" alt="this is me!"></td>
-            </tr>
-        </table>
-        
-        <h3>Assignment Table of Contents</h3>
-        <ol>
-            <li><a href="assignments/assignment-1.html">Hello Me!</a></li>
-            <li><a href="assignments/assignment-3.html">Wikipedia Page: The Blue Dragon</a></li>
-        </ol>
-    
+        <!-- Page content -->
+        <main>
+            <div>
+                <h2>hello!</h2>
+                <div class="basics">
+                    <p>i'm katie :)</p>
+                    <p>b.a. neuroscience | media studies minor | creative technology and design minor</p>
+                </div>
+            </div>
+                <img class = "me" src="./img/me.png" alt="this is me!">
+        </main>
     </body>
-<html>
+</html>
