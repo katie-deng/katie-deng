@@ -2,18 +2,74 @@ body{
     margin: 0;
 }
 
-/* Header / Nav Bar content */
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Header Name */
 h1 {
-    font-size: 50px;
+    font-size: 75px;
     font-family: 'Chango', cursive;
     padding-left: 25px;
     float: left;
+    text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+}
+
+/* Buttons on Nav bar */
+button{
+    font-size: 28px;
+    font-family: 'Fredoka One', cursive;
+    padding: 5px 12px;
+    border-radius: 16px;
+    transition-duration: 0.4s;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover{
+    background-color: white;
+}
+
+.button1{
+    background-color: #F4C6F6;
+}
+.button1:hover{
+    color: #E88EED;
+}
+
+.button2{
+    background-color: #FFDE84;
+}
+.button2:hover{
+    color: #FFBC0A;
+}
+
+.button3{
+    background-color: #80C8D6;
+}
+.button3:hover{
+    color: #0091AD;
+}
+
+.button4{
+    background-color: #ACDEC0;
+}
+.button4:hover{
+    color: #58BC82;
+}
+
+/* Nav bar formatting */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .tabs {
-    font-size: 30px;
-    font-family: 'Fredoka One', cursive;
-    line-height: 5;
+    line-height: 9;
     padding-right: 15px;
     float: right;
 }
@@ -22,7 +78,9 @@ h1 {
     float: right;
     height: 10%;
     text-align: center;
-    padding: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
     font-size: 20px;
 }
 
@@ -31,34 +89,26 @@ h1 {
     top: 0;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-
 hr {
     width: 100%;
     clear: both;
     visibility: hidden;
 }
 
-/* Page content */
+/* Homepage */
 h2 {
     padding-left: 25px;
     font-family: 'Fredoka One', cursive;
-    font-size: 40px;
-
+    font-size: 45px;
+    letter-spacing: 3px;
 }
 
 ol {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 p {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 main {
@@ -70,6 +120,16 @@ main div p {
     padding-left: 25px;
 }
 
+.basics{
+    font-size: 24px;
+}
+
+.blocks {
+    height: 800px;
+    width: 800px;
+}
+
+/* About PG */
 .me {
     height: auto; 
     width: auto; 
@@ -118,16 +178,16 @@ main div p {
 /* Media query: desktop*/
 @media screen and (min-width: 601px){
     body {
-        background-color: #d2e3fc;
+        background-color: #FBE1D4;
     }
     
     .topnav{
-        background-color: #f7dfdf;
+        background-color: #D3E5F7;
     }
 
     main div .basics {
         display: grid;
         align-items: center;
-        padding-top: 100px;
+        padding-top: 25px;
     }
 }
