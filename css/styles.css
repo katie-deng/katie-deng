@@ -7,7 +7,13 @@ img {
     max-height: 100%;
 }
 
-/* Header Name */
+hr {
+    width: 100%;
+    clear: both;
+    visibility: hidden;
+}
+
+/* Header Name ---------------------------------------------------------------------------- */
 h1 {
     font-size: 75px;
     font-family: 'Chango', cursive;
@@ -16,7 +22,7 @@ h1 {
     text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
 }
 
-/* Buttons on Nav bar */
+/* Buttons on Nav bar ---------------------------------------------------------------------------- */
 button{
     font-size: 28px;
     font-family: 'Fredoka One', cursive;
@@ -59,7 +65,7 @@ button:hover{
     color: #58BC82;
 }
 
-/* Nav bar formatting */
+/* Nav bar formatting ---------------------------------------------------------------------------- */
 ul {
     margin: 0;
     padding: 0;
@@ -89,13 +95,6 @@ ul {
     top: 0;
 }
 
-hr {
-    width: 100%;
-    clear: both;
-    visibility: hidden;
-}
-
-/* Homepage */
 h2 {
     padding-left: 25px;
     font-family: 'Fredoka One', cursive;
@@ -111,25 +110,21 @@ p {
     font-family: 'Sawarabi Gothic', sans-serif;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-
 main div p {
     padding-left: 25px;
 }
 
-.basics{
-    font-size: 24px;
+/* Homepage ---------------------------------------------------------------------------- */
+.basics {
+    font-size: 20px;
 }
 
 .blocks {
-    height: 800px;
-    width: 800px;
+    height: 500px;
+    width: 500px;
 }
 
-/* About PG */
+/* About PG ---------------------------------------------------------------------------- */
 .me {
     height: auto; 
     width: auto; 
@@ -138,7 +133,41 @@ main div p {
     padding: 30px;
 }
 
-/* Media query: phone*/
+/* Contact PG ---------------------------------------------------------------------------- */
+.letter-writing {
+    padding: 30px;
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 50%;
+}
+
+#line1 {
+    font-size: 20px;
+}
+
+div .content {
+    text-indent: 18px;
+    font-size: 20px;
+}
+
+/* Projects PG ---------------------------------------------------------------------------- */
+.projects {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 50px;
+    padding-right: 40px;
+    justify-items: center;
+}
+
+.projects figcaption {
+    text-align: center;
+}
+
+figcaption {
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+/* Media query: phone ---------------------------------------------------------------------------- */
 @media screen and (max-width: 600px){
     body {
         background-color: #fcf3d2;
@@ -172,11 +201,15 @@ main div p {
     .tabs {
         padding-left: 20px;
     }
-
   }
 
-/* Media query: desktop*/
+/* Media query: desktop ---------------------------------------------------------------------------- */
 @media screen and (min-width: 601px){
+    main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    
     body {
         background-color: #FBE1D4;
     }
