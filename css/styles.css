@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
 }
 
@@ -13,6 +13,33 @@ hr {
     visibility: hidden;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+h2 {
+    padding-left: 25px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+
+p {
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
 /* Header Name ---------------------------------------------------------------------------- */
 h1 {
     font-size: 75px;
@@ -23,7 +50,7 @@ h1 {
 }
 
 /* Buttons on Nav bar ---------------------------------------------------------------------------- */
-button{
+#button1 {
     font-size: 28px;
     font-family: 'Fredoka One', cursive;
     padding: 5px 12px;
@@ -31,38 +58,52 @@ button{
     transition-duration: 0.4s;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-button:hover{
-    background-color: white;
-}
-
-.button1{
     background-color: #F4C6F6;
 }
-.button1:hover{
-    color: #E88EED;
+#button1:hover {
+    color: white;
 }
 
-.button2{
+#button2 {
+    font-size: 28px;
+    font-family: 'Fredoka One', cursive;
+    padding: 5px 12px;
+    border-radius: 16px;
+    transition-duration: 0.4s;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: #FFDE84;
 }
-.button2:hover{
-    color: #FFBC0A;
+#button2:hover {
+    color: white;
 }
 
-.button3{
+#button3 {
+    font-size: 28px;
+    font-family: 'Fredoka One', cursive;
+    padding: 5px 12px;
+    border-radius: 16px;
+    transition-duration: 0.4s;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: #80C8D6;
 }
-.button3:hover{
-    color: #0091AD;
+#button3:hover {
+    color: white;
 }
 
-.button4{
+#button4 {
+    font-size: 28px;
+    font-family: 'Fredoka One', cursive;
+    padding: 5px 12px;
+    border-radius: 16px;
+    transition-duration: 0.4s;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: #ACDEC0;
 }
-.button4:hover{
-    color: #58BC82;
+#button4:hover {
+    color: white;
 }
 
 /* Nav bar formatting ---------------------------------------------------------------------------- */
@@ -75,19 +116,13 @@ ul {
 }
 
 .tabs {
-    line-height: 9;
+    line-height: 5;
     padding-right: 15px;
     float: right;
 }
 
-.topnav a {
-    float: right;
-    height: 10%;
-    text-align: center;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 16px;
-    font-size: 20px;
+li {
+   padding: 20px; 
 }
 
 .topnav {
@@ -95,18 +130,7 @@ ul {
     top: 0;
 }
 
-h2 {
-    padding-left: 25px;
-    font-family: 'Fredoka One', cursive;
-    font-size: 45px;
-    letter-spacing: 3px;
-}
-
 ol {
-    font-family: 'Sawarabi Gothic', sans-serif;
-}
-
-p {
     font-family: 'Sawarabi Gothic', sans-serif;
 }
 
@@ -159,21 +183,6 @@ div .content {
     padding-right: 30px;
     justify-items: center;
     align-items: center;
-}
-
-#wikipg {
-    width: 100%; 
-    height: 100%;
-}
-
-#book {
-    width: 100%;
-    height: 100%;
-}
-
-#film {
-    width: 100%;
-    height: 100%;
 }
 
 .projects figcaption {
@@ -232,6 +241,22 @@ figcaption {
         padding-left: 20px;
     }
 
+    #button1 {
+        font-size: 16px;
+    }
+
+    #button2 {
+        font-size: 16px;
+    }    
+
+    #button3 {
+        font-size: 16px;
+    }    
+
+    #button4 {
+        font-size: 16px;
+    }    
+
     .projects {
         display: grid;
         grid-template-columns: 1fr;
@@ -242,10 +267,6 @@ figcaption {
         width: 75%;
         height: auto;
         padding-left: 65px;
-    }
-
-    button {
-        font-size: 18px;
     }
   }
 
