@@ -1,11 +1,24 @@
-h1 {
+h2 {
   font-family: helvetica, arial, sans-serif;
   text-align: center;
 }
 
 body {
-  width: 640px;
+  /* width: 640px; */
   margin: 0 auto;
+  background-color: #FBE1D4;
+}
+
+.topnav {
+  background-color: #D3E5F7;
+  padding-top: 0.3px;
+  position: sticky;
+}
+
+hr {
+  width: 100%;
+  clear: both;
+  visibility: hidden;
 }
 
 .full-img {
@@ -13,6 +26,15 @@ body {
   display: block;
   width: 640px;
   height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-family: 'Chango', cursive;
+  font-size: 75px;
+  padding-left: 25px;
+  text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
 }
 
 .overlay {
@@ -37,6 +59,7 @@ button {
 
 .thumb-bar img {
   display: block;
+  position: relative;
   width: 20%;
   float: left;
   cursor: pointer;
