@@ -1,12 +1,14 @@
 h2 {
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Fredoka One', cursive;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 body {
   /* width: 640px; */
-  margin: 0 auto;
+  margin: auto;
   background-color: #FBE1D4;
+  text-align: center;
 }
 
 .topnav {
@@ -28,6 +30,11 @@ hr {
   height: 480px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.displayed-img {
+  width: 640px;
+  height: 480px;
 }
 
 h1 {
@@ -58,9 +65,8 @@ button {
 }
 
 .thumb-bar img {
-  display: block;
-  position: relative;
-  width: 20%;
-  float: left;
+  display: inline-block;
+  position: center;
+  width: 9.5%;
   cursor: pointer;
 }

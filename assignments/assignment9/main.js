@@ -5,23 +5,43 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const imageArray = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg", "pic5.jpg"];
+const imageArray = ["2019-01-26.JPG", "2019-09-26.JPG", "2019-12-19.JPG", "2020-11-20.JPG", "2021-11-16.JPG"];
 
 /* Declaring the alternative text for each image file */
 const alts = {
-    "pic1.jpg" : "Closeup of a human eye",
-    "pic2.jpg" : "Marble pattern",
-    "pic3.jpg" : "Flowers",
-    "pic4.jpg" : "Egyptian art",
-    "pic5.jpg" : "Butterfly on leaf"
+    "2019-01-26.JPG" : "Sunset 1",
+    "2019-09-26.JPG" : "Sunset 2",
+    "2019-12-19.JPG" : "Sunset 3",
+    "2020-11-20.JPG" : "City lights",
+    "2021-11-16.JPG" : "Sunset 4"
 }
 
 /* Looping through images */
+for (const image of imageArray) {
+    const newImage = document.createElement('img');
+    newImage.setAttribute('src', `images/${image}`);
+    newImage.setAttribute('alt', alts[image]);
+    thumbBar.appendChild(newImage);
 
+    /* Adding a click event listener to each thumbnail image */
+    newImage.addEventListener('click', e => {
+        displayedImage.src = e.target.src;
+        displayedImage.alt = e.target.alt;
+        });
+    }
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
 
 /* Wiring up the Darken/Lighten button */
+btn.addEventListener("click", () => {
+    const btnClass = btn.getAttribute("class");
+    if (btnClass === "dark") {
+        btn.setAttribute("class", "light");
+        btn.textContent = "lighten";
+        overlay.style.backgroundColor = "rgba(0,0,0,0.5)";
+    }
+    else {
+        btn.setAttribute("class", "dark");
+        btn.textContent = "darken";
+        overlay.style.backgroundColor = "rgba(0,0,0,0)";
+    }
+});
