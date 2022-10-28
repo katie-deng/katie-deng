@@ -74,7 +74,7 @@ let newEmployee =
 resources["employees"].push (newEmployee)
 
 console.log(resources.employees.length)
-console.log(resources.employees[3].name)
+console.log(resources.employees[3])
 
 // Question 4: total salary -------------------------------------
 
@@ -91,9 +91,19 @@ function raiseSalary (salary) {
         if (resources.employees[j].raise === true) {
             let increaseSalary = resources.employees[j].salary * 1.1
             resources.employees[j].salary = increaseSalary
-            // resources.employees[j].raise === true
+            resources.employees[j].raise = false
         }  
     }
 }
 
 console.log(resources.employees)
+
+// let test1 = resources.employees[0].salary 
+// let newsalary = test1 * 1.1
+// resources.employees[0].salary = newsalary 
+
+// console.log(resources.employees[0].salary)
+
+// console.log(resources.employees[0].raise)
+// resources.employees[0].raise = false
+// console.log(resources.employees[0].raise)
