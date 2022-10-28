@@ -29,7 +29,7 @@ console.log (resources.employees)
 console.log (resources.employees[2].name)
 
 // Question 2: company details -------------------------------------
-var resources = {
+var company = {
     "companyName" : "Tech Stars",
     "website" : "www.techstars.site",
     "employees" : [
@@ -57,8 +57,7 @@ var resources = {
     ]
 }
 
-console.log(resources.companyName)
-console.log(resources.website)
+console.log(company)
 
 // Question 3: new employee -------------------------------------
 
@@ -71,16 +70,16 @@ let newEmployee =
         "raise" : false,
     }
 
-resources["employees"].push (newEmployee)
+company["employees"].push (newEmployee)
 
-console.log(resources.employees.length)
-console.log(resources.employees[3])
+console.log(company.employees.length)
+console.log(company.employees[3])
 
 // Question 4: total salary -------------------------------------
 
 let total = 0
-for (let i = 0; i < resources.employees.length; i++) {
-    total += resources.employees[i].salary
+for (let i = 0; i < company.employees.length; i++) {
+    total += company.employees[i].salary
 }
 console.log(total)
 
@@ -89,19 +88,19 @@ console.log(total)
 function raiseSalary (salary) {
     for (let j = 0; j < resources.employees.length; j++) {
         if (resources.employees[j].raise === true) {
-            let increaseSalary = resources.employees[j].salary * 1.1
-            resources.employees[j].salary = increaseSalary
-            resources.employees[j].raise = false
+            let increaseSalary = resources.employees[j]['salary'] * 1.1
+            resources.employees[j]['salary'] = increaseSalary
+            resources.employees[j]['raise'] = false
         }  
     }
 }
 
-console.log(resources.employees)
+console.log(company.employees)
+
 
 // let test1 = resources.employees[0].salary 
 // let newsalary = test1 * 1.1
 // resources.employees[0].salary = newsalary 
-
 // console.log(resources.employees[0].salary)
 
 // console.log(resources.employees[0].raise)
