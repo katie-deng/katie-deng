@@ -95,48 +95,16 @@ for (let j = 0; j < company.employees.length; j++) {
 
 console.log(company.employees)
 
-// Question 6: work from home
+// Question 6: work from home -------------------------------------
 
-// var OutofOffice = {
-//     "working from home": ["Anna", "Sam"]
-// }
-
-company["employees"].push(OutofOffice)
-
-console.log(company.employees)
-
-let officestatus = {"working from home" : true}
-let officestatus2 = {"working from home" : false}
-
-for (let k=0; k < company.employees.length; k++) {
+for (let k = 0; k < company.employees.length; k++) {
     if (company.employees[k].name === "Anna") {
-        const wfh = company.employees[k]
-        wfh.push(officestatus)
-    }else if (company.employees[k].name === "Sam") {
-        let wfhtwo = company.employees[k]
-        wfhtwo.push(officestatus)
+        company.employees[k].wfh = true
+    } else if (company.employees[k].name === "Sam") {
+        company.employees[k].wfh = true
     } else {
-        let wfhthree = company.employees[k]
-        wfhthree.push(officestatus2)
+        company.employees[k].wfh = false
     }
 }
 
-// console.log(company.employees)
-
-// company["employees"].forEach(officestatus)
-// let home = {"working from home" : true}
-// let office = {"working from home" : false}
-// let index = 0
-
-// function officestatus (x){
-//     if (company.employees.name === "Anna") {
-//         const employ = company.employees[3]
-//         employ.push(home)
-//     } else if (company.employees.name === "Sam") {
-//         const employ2 = company.employees[0]
-//         employ2.push(home)
-//     } else {
-//         const employ3 = company.employees[0]
-//     }
-// }
-
+console.log(company.employees)
