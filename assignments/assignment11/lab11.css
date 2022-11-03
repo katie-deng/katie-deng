@@ -22,6 +22,20 @@ html {
     background-size: auto;
   }
   
+  img {
+  height: 50%;
+  width: 50%;
+    display: flex;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #comment {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 10px;
+  }
   .app {
     position: absolute;
     top: 50%;
@@ -45,7 +59,8 @@ html {
   
   .quotes {
     padding: 20px 50px;
-    min-height: 200px;
+    padding-bottom: 0px;
+    min-height: 50px;
   }
   
   .quote-text {
