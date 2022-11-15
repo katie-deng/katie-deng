@@ -90,6 +90,7 @@ const resetButton = document.querySelector(".reset-button").addEventListener("cl
 function baseNumber() {
   output.textContent = "0000000000";
   phoneNumber.textContent = "XXXXXXXXXX";
+   counterQ.textContent = "Does the first digit match your phone number?"
   str = ""
   count = 0
   document.querySelector(".yes-button").disabled = false;
