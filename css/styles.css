@@ -42,16 +42,17 @@ p {
 
 /* Header Name ---------------------------------------------------------------------------- */
 h1 {
-    font-size: 75px;
+    font-size: 60px;
     font-family: 'Chango', cursive;
     padding-left: 25px;
-    float: left;
     text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+    position: absolute;
+    top: -30px;
 }
 
 /* Buttons on Nav bar ---------------------------------------------------------------------------- */
 #button1 {
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Fredoka One', cursive;
     padding: 5px 12px;
     border-radius: 16px;
@@ -65,7 +66,7 @@ h1 {
 }
 
 #button2 {
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Fredoka One', cursive;
     padding: 5px 12px;
     border-radius: 16px;
@@ -79,7 +80,7 @@ h1 {
 }
 
 #button3 {
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Fredoka One', cursive;
     padding: 5px 12px;
     border-radius: 16px;
@@ -93,7 +94,7 @@ h1 {
 }
 
 #button4 {
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Fredoka One', cursive;
     padding: 5px 12px;
     border-radius: 16px;
@@ -103,6 +104,20 @@ h1 {
     background-color: #ACDEC0;
 }
 #button4:hover {
+    color: white;
+}
+
+#button5 {
+    font-size: 24px;
+    font-family: 'Fredoka One', cursive;
+    padding: 5px 12px;
+    border-radius: 16px;
+    transition-duration: 0.4s;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: #FFAFAD;
+}
+#button5:hover {
     color: white;
 }
 
@@ -116,9 +131,9 @@ ul {
 }
 
 .tabs {
-    line-height: 5;
     padding-right: 15px;
     float: right;
+    line-height: 25px;
 }
 
 li {
@@ -128,6 +143,7 @@ li {
 .topnav {
     position: sticky;
     top: 0;
+    height: 100px;
 }
 
 ol {
