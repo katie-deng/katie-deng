@@ -141,7 +141,7 @@ li {
 }
 
 .topnav {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     height: 100px;
 }
@@ -155,13 +155,29 @@ main div p {
 }
 
 /* Homepage ---------------------------------------------------------------------------- */
-.basics {
-    font-size: 20px;
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.blocks {
-    height: 500px;
-    width: 500px;
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 /* About PG ---------------------------------------------------------------------------- */
@@ -191,7 +207,26 @@ div .content {
 }
 
 /* Projects PG ---------------------------------------------------------------------------- */
+
 .projects {
+    width: 100%;
+}
+
+.image-row {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 50px;
+    padding: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.holder img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+/* .projects {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     gap: 50px;
@@ -201,13 +236,20 @@ div .content {
     align-items: center;
 }
 
+.figure img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+
 .projects figcaption {
     text-align: center;
 }
 
 figcaption {
     font-family: 'Sawarabi Gothic', sans-serif;
-}
+} */
 
 /* Gallery PG ---------------------------------------------------------------------------- */
 
@@ -288,22 +330,11 @@ figcaption {
 
 /* Media query: desktop ---------------------------------------------------------------------------- */
 @media screen and (min-width: 601px){
-    main {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-    }
-    
     body {
         background-color: #FBE1D4;
     }
     
     .topnav{
         background-color: #D3E5F7;
-    }
-
-    main div .basics {
-        display: grid;
-        align-items: center;
-        padding-top: 25px;
     }
 }
