@@ -142,7 +142,6 @@ li {
 }
 
 .topnav {
-    /* position: sticky; */
     top: 0;
     height: 100px;
 }
@@ -182,24 +181,54 @@ main div p {
 }
 
 /* About PG ---------------------------------------------------------------------------- */
+.info-box {
+    display: flex;
+}
+
+#para1 {
+    font-size: 20px;
+    margin-top: 100px;
+    margin-right: 25px;
+}
+
 .me {
-    height: 400px; 
-    width: 400px; 
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 50px;
+    height: 300px; 
+    width: 300px; 
+    float: right;
+    margin-right: 40px;
+    filter: drop-shadow(10px 10px 10px #61638a);
+}
+
+#para2 {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.boulder {
+    width: 30%;
+    height: 30%;
+    float: left;
+    margin-left: 25px;
+    filter: drop-shadow(10px 10px 10px #74826b);
+}
+
+#para3 {
+    font-size: 20px;
+}
+
+.giphy-embed{
+    border: 0;
+    margin: 25px;
+    filter: drop-shadow(10px 10px 10px #fab176);
+}
+
+.facts {
+    margin-left: 10px;
+    margin-top: 90px;
 }
 
 /* Contact PG ---------------------------------------------------------------------------- */
-/* #line1 {
-    font-size: 20px;
-}
-
-div .content {
-    text-indent: 18px;
-    font-size: 20px;
-} */
-
 .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -238,11 +267,6 @@ main div a {
     margin-top: 40px;
     margin-bottom: 40px;
 }
-
-/* .icons {
-    padding-left: 250px;
-    padding-top: 175px;
-} */
 
 /* Style all font awesome icons */
 .fa-linkedin {
@@ -307,7 +331,6 @@ main div a {
 }
 
 /* Projects PG ---------------------------------------------------------------------------- */
-
 .projects {
     width: 100%;
 }
@@ -324,6 +347,44 @@ main div a {
 .holder img {
     max-width: 300px;
     max-height: 300px;
+}
+
+.holder {
+    position: relative;
+}
+
+.holder:hover .overlay {
+    opacity: 1;
+}
+
+.thumbnail {
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #c0b3d7;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 /* .projects {
