@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Views - KD</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="effects.js"></script>
+        <!-- Font Links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chango&family=Fredoka+One&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+        <!-- Icons -->
+        <script src="https://kit.fontawesome.com/bb4868f213.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <!-- Website Heading -->
+        <div class="topnav">
+            <div>
+                <h1>
+                    <span style=color:#FFBC0A>k</span>
+                    <span style=color:#E88EED>a</span>
+                    <span style=color:#0091AD>t</span>
+                    <span style=color:#FF5E5B>i</span>
+                    <span style=color:#58BC82>e</span>
+                </h1>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="tabs">
+                    <ul>
+                        <li>
+                            <p><a href="index.html" id="button1">home</a></p>
+                        </li>
+                        <li>
+                            <p><a href="projects-pg.html" id="button2">projects</a></p>
+                        </li>
+                        <li>
+                            <p><a href="about-pg.html" id="button3">about</a></p>
+                        </li>
+                        <li>
+                            <p><a href="contact-pg.html" id="button4">contact</a></p>
+                        </li>  
+                        <li>
+                            <p><a href="play-pg.html" id="button5">play</a></p>
+                        </li> 
+                        <li>
+                            <p><a href="views-pg.html" id="button6">views</a></p>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <!-- Page content -->
+        <main>
+            <h2>views</h2>
+
+            <p class="description">Come enjoy the view! I am a lover of sunsets so here is a small gallery of some photos I've taken of sunsets over the years. I used the app <em>Huji Film</em> to take these photos; it applies a vintage-like filter on the photos so it makes it look like they were taken on a film camera. Enjoy ~ </p>
+            <p class="description">P.S. for those using Google Chrome, please start the music and enjoy the ✨vibe✨.</p>
+            <audio class="music" controls autoplay><source src="./assets/SunsetLover.mp3" type="audio/mp3"></audio>
+
+            <!-- The grid: four columns -->
+            <div class="row">
+                <div class="column">
+                    <img src="./assignments/assignment9/images/2019-01-26.JPG" alt="Sunset 1" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="./assignments/assignment9/images/2019-09-26.JPG" alt="Sunset 2" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="./assignments/assignment9/images/2019-12-19.JPG" alt="Sunset 3" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="./assignments/assignment9/images/2021-11-16.JPG" alt="Sunset 4" onclick="myFunction(this);">
+                </div>
+            </div>
+            
+            <!-- The expanding image container -->
+            <div class="container">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            
+                <!-- Expanded image -->
+                <img src="#" alt="#" id="expandedImg">
+            
+                <!-- Image text -->
+                <div id="imgtext"></div>
+            </div>
+        </main>
+    </body>
+</html>

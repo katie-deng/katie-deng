@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <title>Play - KD</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./assets/matching.css">
+        <script defer src="./assets/matching.js"></script>
         <!-- Font Links -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,24 +26,102 @@
                     <span style=color:#58BC82>e</span>
                 </h1>
             </div>
-            <div class="tabs">
-                <ul>
-                    <li>
-                        <p><a href="index.html" id="button1">home</a></p>
-                    </li>
-                    <li>
-                        <p><a href="projects-pg.html" id="button2">projects</a></p>
-                    </li>
-                    <li>
-                        <p><a href="about-pg.html" id="button3">about</a></p>
-                    </li>
-                    <li>
-                        <p><a href="contact-pg.html" id="button4">contact</a></p>
-                    </li>  
-                    <li>
-                        <p><a href="play-pg.html" id="button5">play</a></p>
-                    </li> 
-                </ul>
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="tabs">
+                    <ul>
+                        <li>
+                            <p><a href="index.html" id="button1">home</a></p>
+                        </li>
+                        <li>
+                            <p><a href="projects-pg.html" id="button2">projects</a></p>
+                        </li>
+                        <li>
+                            <p><a href="about-pg.html" id="button3">about</a></p>
+                        </li>
+                        <li>
+                            <p><a href="contact-pg.html" id="button4">contact</a></p>
+                        </li>  
+                        <li>
+                            <p><a href="play-pg.html" id="button5">play</a></p>
+                        </li> 
+                        <li>
+                            <p><a href="views-pg.html" id="button6">views</a></p>
+                        </li> 
+                    </ul>
+                </div>
             </div>
             <hr>
         </div>
+
+        <!-- Page content -->
+        <main>
+            <div>
+                <h2>play: matching pair</h2>
+            </div>
+            <hr>
+            <div class="game">
+                <div class="controls">
+                    <button>Start</button>
+                    <div class="stats">
+                        <div class="moves">0 moves</div>
+                        <div class="timer">time: 0 sec</div>
+                    </div>
+                </div>
+                <div class="board-container">
+                    <div class="board" data-dimension="5">
+                        <div class="card">
+                            <div class="card-front"></div>
+                            <div class="card-back">🥔</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-front"></div>
+                            <div class="card-back">🥔</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-front"></div>
+                            <div class="card-back">🥔</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-front"></div>
+                            <div class="card-back">🥔</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-front"></div>
+                            <div class="card-back">🥔</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-front"></div>
+                            <div class="card-back">🥔</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-front"></div>
+                            <div class="card-back">🥔</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-front"></div>
+                            <div class="card-back">🥔</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-front"></div>
+                            <div class="card-back">🥔</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-front"></div>
+                            <div class="card-back">🥔</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-front"></div>
+                            <div class="card-back">🥔</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-front"></div>
+                            <div class="card-back">🥔</div>
+                        </div>
+                    </div>
+                    <div class="win">You won!</div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
