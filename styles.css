@@ -537,6 +537,63 @@ main div a {
     width: 95%;
   }
 
+/* Play PG ---------------------------------------------------------------------------- */
+.randomize {
+    margin-left: 25px;
+    background-color: #ACDEC0;
+    font-size: 18px;
+}
+
+.randomize:disabled {
+    background-color: rgb(151, 144, 144);
+}
+
+#start {
+    margin: 25px;
+}
+
+label {
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+#measurements {
+    margin: 25px;
+}
+
+.story {
+    font-size: 24px;
+    color: #FF5E5B;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.story2 {
+    font-size: 24px;
+    color: #FF5E5B;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+#yesbtn {
+    font-size: 16px;
+    background-color: #ACDEC0;
+}
+
+#yesbtn:disabled {
+    background-color: rgb(151, 144, 144);
+}
+
+#nobtn {
+    font-size: 16px;
+    margin-left: 25px;
+    background-color: #ACDEC0;
+}
+
+#nobtn:disabled {
+    background-color: rgb(151, 144, 144);
+}
+
 /* Media query: phone ---------------------------------------------------------------------------- */
 @media screen and (max-width: 1200px){
     body {
@@ -714,6 +771,12 @@ main div a {
 
     .container {
         margin-left: 110px;
+    }
+
+    /* Play PG */
+    .story {
+        font-size: 20px;
+        color: #0091AD;
     }
   }
 

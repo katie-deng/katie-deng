@@ -5,7 +5,7 @@
         <title>Play - KD</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="./assets/matching.css">
-        <script defer src="./assets/matching.js"></script>
+        <script defer src="./play.js"></script>
         <!-- Font Links -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,72 +56,25 @@
 
         <!-- Page content -->
         <main>
+
+          <h2>play: storytime</h2>
+            <div id="start">
+              <label for="customname">Enter your name:</label>
+              <input id="customname" type="text" placeholder="">
+            </div>
+            <div id="measurements" >
+              <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
+              <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+            </div>
             <div>
-                <h2>play: matching pair</h2>
+              <button class="randomize">Generate random story</button>
             </div>
-            <hr>
-            <div class="game">
-                <div class="controls">
-                    <button>Start</button>
-                    <div class="stats">
-                        <div class="moves">0 moves</div>
-                        <div class="timer">time: 0 sec</div>
-                    </div>
-                </div>
-                <div class="board-container">
-                    <div class="board" data-dimension="5">
-                        <div class="card">
-                            <div class="card-front"></div>
-                            <div class="card-back">🥔</div>
-                        </div>
-                        <div class="card">
-                            <div class="card-front"></div>
-                            <div class="card-back">🥔</div>
-                        </div>
-                        <div class="card">
-                            <div class="card-front"></div>
-                            <div class="card-back">🥔</div>
-                        </div>
-                        <div class="card">
-                            <div class="card-front"></div>
-                            <div class="card-back">🥔</div>
-                        </div>
-                        <div class="card">
-                            <div class="card-front"></div>
-                            <div class="card-back">🥔</div>
-                        </div>
-                        <div class="card">
-                            <div class="card-front"></div>
-                            <div class="card-back">🥔</div>
-                        </div>
-                        <div class="card">
-                            <div class="card-front"></div>
-                            <div class="card-back">🥔</div>
-                        </div>
-                        <div class="card">
-                            <div class="card-front"></div>
-                            <div class="card-back">🥔</div>
-                        </div>
-                        <div class="card">
-                            <div class="card-front"></div>
-                            <div class="card-back">🥔</div>
-                        </div>
-                        <div class="card">
-                            <div class="card-front"></div>
-                            <div class="card-back">🥔</div>
-                        </div>
-                        <div class="card">
-                            <div class="card-front"></div>
-                            <div class="card-back">🥔</div>
-                        </div>
-                        <div class="card">
-                            <div class="card-front"></div>
-                            <div class="card-back">🥔</div>
-                        </div>
-                    </div>
-                    <div class="win">You won!</div>
-                </div>
+            <p class="story"></p>
+            <div id="continue">
+              <p class="description">Continue story?</p>
+              <p><button id="yesbtn" type="button">Yes</button><button id="nobtn" type="button">No</button></p>
             </div>
+            <p class="story2"></p>
         </main>
     </body>
 </html>
